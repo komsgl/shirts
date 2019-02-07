@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b6d10f63fd0a86ff0be5f72c5114faa",
+    "content-hash": "a98ecabccf1221b3652fa9947bc9e568",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -26,6 +26,28 @@
             "type": "bower-asset",
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/fancybox",
+            "version": "v3.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fancyapps/fancybox.git",
+                "reference": "f2f8a40c9152383bef3b58def3bf0e8f277e5c02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fancyapps/fancybox/zipball/f2f8a40c9152383bef3b58def3bf0e8f277e5c02",
+                "reference": "f2f8a40c9152383bef3b58def3bf0e8f277e5c02",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "GPL-3.0"
             ]
         },
         {
@@ -168,6 +190,41 @@
             "time": "2018-03-26T11:24:36+00:00"
         },
         {
+            "name": "components/font-awesome",
+            "version": "5.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/font-awesome.git",
+                "reference": "18619364d77677cec103934b1aee6d4f45407d1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/18619364d77677cec103934b1aee6d4f45407d1a",
+                "reference": "18619364d77677cec103934b1aee6d4f45407d1a",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "styles": [
+                        "css/fontawesome-all.css"
+                    ],
+                    "files": [
+                        "css/fontawesome-all.min.css",
+                        "webfonts/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-4.0",
+                "MIT",
+                "OFL-1.1"
+            ],
+            "description": "Font Awesome, the iconic SVG, font, and CSS framework.",
+            "time": "2018-02-11T17:32:00+00:00"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.10.0",
             "source": {
@@ -213,6 +270,50 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
+        },
+        {
+            "name": "grozzzny/depends",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grozzzny/depends.git",
+                "reference": "eb6b8e3e17847d533d21df0de06eae3416ca43e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grozzzny/depends/zipball/eb6b8e3e17847d533d21df0de06eae3416ca43e0",
+                "reference": "eb6b8e3e17847d533d21df0de06eae3416ca43e0",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/fancybox": "*",
+                "components/font-awesome": "5.0.6",
+                "php": ">=5.6.0",
+                "twbs/bootstrap": "4.1.1"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "grozzzny\\depends\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitriy Groznyy",
+                    "email": "grozzzny@gmail.com",
+                    "homepage": "http://pr-kenig.ru"
+                }
+            ],
+            "description": "Depends for Yii2",
+            "keywords": [
+                "depends",
+                "yii"
+            ],
+            "time": "2018-12-14T16:14:56+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -267,6 +368,57 @@
                 "mailer"
             ],
             "time": "2018-07-31T09:26:32+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "779ad9f174ea5ab7e755f6df0ec9e5912d67dd16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/779ad9f174ea5ab7e755f6df0ec9e5912d67dd16",
+                "reference": "779ad9f174ea5ab7e755f6df0ec9e5912d67dd16",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "time": "2018-04-30T16:04:33+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -3261,7 +3413,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "grozzzny/depends": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
